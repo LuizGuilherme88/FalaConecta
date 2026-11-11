@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Acessibilidade -->
+  <div class="acessibilidade">
+    <a href="#" class="acessibilidade-link">
+      <img src="imagens/acessibilidade.png" width="20" height="20" alt="">
+      Acessibilidade
+    </a>
+    <button type="button" id="font-minus" aria-label="Diminuir fonte">a-</button>
+    <button type="button" id="font-plus" aria-label="Aumentar fonte">A+</button>
+    <button type="button" id="contrast" class="contraste-btn" aria-label="Alternar alto contraste"></button>
+  </div>
+
+
+  <!--Header-->
+    <header class="topo">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="imagens/logo.png" alt="Logo FalaConecta" width="44" height="44">
+                <span>FalaConecta</span>
+            </a>
+            <button class="menu-btn" id="menu-btn" aria-label="Abrir Menu" aria-expanded="false" aria-controls="menu">
+               <span></span><span></span><span></span>
+            </button>
+        </nav>
+        <ul class="menu" id="menu" hidden>
+            <li><a href="reclamacao.html">Fazer uma reclamação</a></li>
+            <li><a href="sugestao.html">Enviar Sugestão</a></li>
+            <li><a href="acompanhar.html">Acompanhar Solicitação</a></li>
+            <li><a href="index.html">Perguntas Frequentes</a></li>
+        </ul>
+    </header>
+
+    <!--formulario do acompanhamento-->
+    <h1 id="h1-acompanhamento">Consulte sua manifestação</h1>
+    <h2 id="h2-acompanhamento">Acompanhe o andamento e consulte as atualizações da sua manifestação</h2>
+    <form id="acompanhamento">
+      <fieldset>
+        <legend>Informe os dados</legend>
+        <p>Numero do protocolo</p>
+        <input type="text" id="numero-protocolo" placeholder="Ex:SB-2026-00842">
+
+        <p>Código de acesso</p>
+        <input type="text" id="codigo-acesso" placeholder="Digite seu código de acesso">
+
+        <button type="submit">Acompanhar</button>
+      </fieldset>
+    </form>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
