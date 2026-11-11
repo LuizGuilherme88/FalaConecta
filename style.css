@@ -1,3 +1,4 @@
+@import url(termos.css);
 :root {
   --azul: #0a6fd0;
   --azul-escuro: #0b57a6;
@@ -283,7 +284,7 @@ button {
   padding-bottom: 14px;
 }
 
-/* Alto contraste */
+/* Contraste */
 body.alto-contraste {
   background: #000;
   color: #fff;
